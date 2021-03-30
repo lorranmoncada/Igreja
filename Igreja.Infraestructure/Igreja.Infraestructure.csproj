@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+   <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.1" />
+    <PackageReference Include="Npgsql" Version="5.0.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Igreja.Domain\Igreja.Domain.csproj" />
+    <ProjectReference Include="..\Igreja.Repositorie.Abastract\Igreja.Repositorie.Abastract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interface\" />
+  </ItemGroup>
+
+</Project>

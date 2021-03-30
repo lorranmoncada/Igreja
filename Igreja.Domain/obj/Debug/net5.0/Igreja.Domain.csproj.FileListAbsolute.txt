@@ -1,0 +1,17 @@
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Domain.deps.json
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Domain.dll
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\ref\Igreja.Domain.dll
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Domain.pdb
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Core.dll
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Core.pdb
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.csprojAssemblyReference.cache
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.AssemblyInfoInputs.cache
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.AssemblyInfo.cs
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.csproj.CoreCompileInputs.cache
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.csproj.CopyComplete
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.dll
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\ref\Igreja.Domain.dll
+C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.pdb
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Service.Abstract.dll
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Service.Abstract.pdb

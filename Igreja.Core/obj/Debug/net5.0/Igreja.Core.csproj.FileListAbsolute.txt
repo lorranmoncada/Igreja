@@ -1,0 +1,11 @@
+C:\Estudo\Igreja\Igreja.Core\bin\Debug\net5.0\Igreja.Core.deps.json
+C:\Estudo\Igreja\Igreja.Core\bin\Debug\net5.0\Igreja.Core.dll
+C:\Estudo\Igreja\Igreja.Core\bin\Debug\net5.0\ref\Igreja.Core.dll
+C:\Estudo\Igreja\Igreja.Core\bin\Debug\net5.0\Igreja.Core.pdb
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.AssemblyInfoInputs.cache
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.AssemblyInfo.cs
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.csproj.CoreCompileInputs.cache
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.dll
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\ref\Igreja.Core.dll
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.pdb

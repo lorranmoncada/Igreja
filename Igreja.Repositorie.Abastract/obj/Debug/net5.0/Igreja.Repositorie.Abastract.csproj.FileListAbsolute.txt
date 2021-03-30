@@ -1,0 +1,11 @@
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\bin\Debug\net5.0\Igreja.Repositorie.Abastract.deps.json
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\bin\Debug\net5.0\Igreja.Repositorie.Abastract.dll
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\bin\Debug\net5.0\ref\Igreja.Repositorie.Abastract.dll
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\bin\Debug\net5.0\Igreja.Repositorie.Abastract.pdb
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.AssemblyInfoInputs.cache
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.AssemblyInfo.cs
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.csproj.CoreCompileInputs.cache
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.dll
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\ref\Igreja.Repositorie.Abastract.dll
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.pdb
