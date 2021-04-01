@@ -8,13 +8,37 @@
     ".NETCoreApp,Version=v5.0": {
       "Igreja.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.1.1",
+          "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
+          "Igreja.Repositorie.Abastract": "1.0.0",
           "Igreja.Service.Abstract": "1.0.0"
         },
         "runtime": {
           "Igreja.Domain.dll": {}
         }
       },
+      "AutoMapper/10.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.1.0"
+          }
+        }
+      },
+      "FluentValidation/9.5.3": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.5.3.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.EntityFrameworkCore/5.0.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.1",
@@ -132,12 +156,19 @@
       "System.Collections.Immutable/5.0.0": {},
       "System.ComponentModel.Annotations/5.0.0": {},
       "System.Diagnostics.DiagnosticSource/5.0.0": {},
+      "System.Reflection.Emit/4.7.0": {},
       "Igreja.Core/1.0.0": {
         "dependencies": {
+          "FluentValidation": "9.5.3",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "runtime": {
           "Igreja.Core.dll": {}
+        }
+      },
+      "Igreja.Repositorie.Abastract/1.0.0": {
+        "runtime": {
+          "Igreja.Repositorie.Abastract.dll": {}
         }
       },
       "Igreja.Service.Abstract/1.0.0": {
@@ -152,6 +183,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/10.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
+      "path": "automapper/10.1.1",
+      "hashPath": "automapper.10.1.1.nupkg.sha512"
+    },
+    "FluentValidation/9.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "path": "fluentvalidation/9.5.3",
+      "hashPath": "fluentvalidation.9.5.3.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/5.0.1": {
       "type": "package",
@@ -251,7 +303,19 @@
       "path": "system.diagnostics.diagnosticsource/5.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
     },
+    "System.Reflection.Emit/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
     "Igreja.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Igreja.Repositorie.Abastract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

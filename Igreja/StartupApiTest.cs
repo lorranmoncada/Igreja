@@ -1,4 +1,5 @@
 ﻿using Igreja.Application;
+using Igreja.Core.Data;
 using Igreja.Infraestructure;
 using Igreja.Repositorie.Abastract;
 using Microsoft.AspNetCore.Builder;

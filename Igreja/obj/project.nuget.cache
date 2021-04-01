@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2Tn35iA7m9KROqeNINDfS9QRNf/8SVRXMSsWRXxeNOXHdHxLT+G4l1LSQ60dNny0IU1uS73eAPBQ03tqEY8kag==",
+  "dgSpecHash": "edwQZw2wX+GEUufFYcbYPF/u4GlLWINhAsxM0rz6eg2dZESaI0GwZg6biyVtf3zXKRfb8ZHu21p9MbCfpmcP9g==",
   "success": true,
   "projectFilePath": "C:\\Estudo\\Igreja\\Igreja\\Igreja.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.1\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.1\\microsoft.aspnetcore.jsonpatch.5.0.1.nupkg.sha512",

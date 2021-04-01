@@ -119,6 +119,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -176,6 +180,9 @@
               "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj": {
                 "projectPath": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj"
               },
+              "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj": {
+                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj"
+              },
               "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj": {
                 "projectPath": "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj"
               }
@@ -191,6 +198,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -270,6 +287,10 @@
             "Npgsql": {
               "target": "Package",
               "version": "[5.0.1.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             }
           },
           "imports": [

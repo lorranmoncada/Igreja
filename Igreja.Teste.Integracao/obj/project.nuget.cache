@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "49B3AdvT7NnpfW6rjPGMujH3blwCJFBvLYyXPtSpZI51YRypET1ZFUOxUrDm7eZ4ExCfK1bMXKyxyfhje5XpHg==",
+  "dgSpecHash": "KcExAp4kgI1mBfn0OsRmMFM6f2TGur/COFbKIg3Qsb9Gm7EyUGDbJtUr5ieNBGyN6WBugVAGwq57PIQ8qlZrsA==",
   "success": true,
   "projectFilePath": "C:\\Estudo\\Igreja\\Igreja.Teste.Integracao\\Igreja.Teste.Integracao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.1\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.1\\microsoft.aspnetcore.jsonpatch.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.1\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.1.nupkg.sha512",

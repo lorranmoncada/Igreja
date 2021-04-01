@@ -1,11 +1,5 @@
-﻿using Igreja.Core;
-using Igreja.Domain.Entity;
-using Igreja.Infraestructure.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Igreja.Domain.Entity;
+using Igreja.Repositorie.Abastract;
 
 namespace Igreja.Infraestructure.Repository
 {

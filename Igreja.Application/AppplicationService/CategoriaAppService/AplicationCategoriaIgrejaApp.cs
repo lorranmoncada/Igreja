@@ -1,4 +1,5 @@
-﻿using Igreja.Core.Extension;
+﻿using Igreja.Core.Data;
+using Igreja.Core.Extension;
 using Igreja.Domain;
 using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;

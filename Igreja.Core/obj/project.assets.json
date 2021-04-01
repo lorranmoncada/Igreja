@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "FluentValidation/9.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -164,6 +173,24 @@
     }
   },
   "libraries": {
+    "FluentValidation/9.5.3": {
+      "sha512": "BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "type": "package",
+      "path": "fluentvalidation/9.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.9.5.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/5.0.1": {
       "sha512": "bz4WSbLqNw9gGeHw8VAzCcX6TVDLAD/SZRii9G7XSsqAdLL2J8pVINemXfRUt5IHlC1yWC5To4PzAUWJJZCbYw==",
       "type": "package",
@@ -523,6 +550,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FluentValidation >= 9.5.3",
       "Microsoft.EntityFrameworkCore >= 5.0.1"
     ]
   },
@@ -573,6 +601,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[9.5.3, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.1, )"

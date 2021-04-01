@@ -15,3 +15,5 @@ C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\ref\Igreja.Domain.dll
 C:\Estudo\Igreja\Igreja.Domain\obj\Debug\net5.0\Igreja.Domain.pdb
 C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Service.Abstract.dll
 C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Service.Abstract.pdb
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Repositorie.Abastract.dll
+C:\Estudo\Igreja\Igreja.Domain\bin\Debug\net5.0\Igreja.Repositorie.Abastract.pdb

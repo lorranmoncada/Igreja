@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v5.0": {
       "Igreja.Core/1.0.0": {
         "dependencies": {
+          "FluentValidation": "9.5.3",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "runtime": {
           "Igreja.Core.dll": {}
+        }
+      },
+      "FluentValidation/9.5.3": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.5.3.0"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore/5.0.1": {
@@ -138,6 +147,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/9.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "path": "fluentvalidation/9.5.3",
+      "hashPath": "fluentvalidation.9.5.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/5.0.1": {
       "type": "package",

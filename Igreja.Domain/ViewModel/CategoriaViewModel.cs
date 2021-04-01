@@ -8,10 +8,10 @@ namespace Igreja.Domain.ViewModel
 {
     public class CategoriaViewModel
     {
-        public int Id { get; private set; }
+        public Guid Id { get; private set; }
         public string TipoCategoria { get; private set; }
 
-        public CategoriaViewModel(int id, string tpCategoria)
+        public CategoriaViewModel(Guid id, string tpCategoria)
         {
             Id = id;
             TipoCategoria = tpCategoria;

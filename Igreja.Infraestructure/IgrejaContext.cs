@@ -1,6 +1,7 @@
 ﻿using Igreja.Core;
 using Igreja.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,8 +10,9 @@ namespace Igreja.Infraestructure
 {
     public class IgrejaContext: DbContext
     {
-        public IgrejaContext(DbContextOptions<IgrejaContext> options)
-          : base(options) { }
+        private readonly IConfiguration _configuration;
+        public IgrejaContext(IConfiguration configuration,DbContextOptions<IgrejaContext> options)
+          : base(options) { _configuration = configuration; }
 
         public DbSet<Proprietario> Proprietario { get; set; }
 
@@ -24,6 +26,14 @@ namespace Igreja.Infraestructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(IgrejaContext).Assembly);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+            var teste = _configuration.GetConnectionString("DefaultConnection");
+            optionsBuilder
+                .UseNpgsql(_configuration.GetConnectionString("DefaultConnection"), options => options.EnableRetryOnFailure());
         }
 
         //public async Task<bool> Commit()

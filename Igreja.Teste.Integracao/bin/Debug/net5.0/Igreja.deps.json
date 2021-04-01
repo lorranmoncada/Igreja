@@ -364,6 +364,17 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FluentValidation/9.5.3": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.5.3.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -677,6 +688,7 @@
       },
       "Igreja.Core/1.0.0": {
         "dependencies": {
+          "FluentValidation": "9.5.3",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "runtime": {
@@ -688,7 +700,10 @@
       },
       "Igreja.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.1.1",
+          "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
+          "Igreja.Repositorie.Abastract": "1.0.0",
           "Igreja.Service.Abstract": "1.0.0"
         },
         "runtime": {
@@ -704,7 +719,8 @@
           "Igreja.Repositorie.Abastract": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.1",
-          "Npgsql": "5.0.1.1"
+          "Npgsql": "5.0.1.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.1"
         },
         "runtime": {
           "Igreja.Infraestructure.dll": {}
@@ -2442,6 +2458,13 @@
       "sha512": "sha512-xSWoVzOipuDU4PeZcUfaZQ+xqXU8QmGv5jrdlxt3MYm9xaOmrefqcfzGQ3SQ+D+8wfBa/ZwSuL0qKOVj080inA==",
       "path": "automapper.extensions.microsoft.dependencyinjection/8.1.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512"
+    },
+    "FluentValidation/9.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "path": "fluentvalidation/9.5.3",
+      "hashPath": "fluentvalidation.9.5.3.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

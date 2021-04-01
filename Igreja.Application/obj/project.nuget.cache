@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zlpdcwRLhAAjrCVBFjZESpf6ExuQ72dbpRetoe1y9M3YMr9Uw6B12nbPTtOszfS17Q4nAZ4fDZlVcdn4I0BJrg==",
+  "dgSpecHash": "TgrWe5GFyFNNj4eAxODAp0pj4TSjDFmx4XjlAi48RA5lkvOSOcQomCVDbtyIkVopoL2vsFgikxh43P6eoiKQHg==",
   "success": true,
   "projectFilePath": "C:\\Estudo\\Igreja\\Igreja.Application\\Igreja.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",
@@ -20,6 +21,7 @@
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.1\\npgsql.entityframeworkcore.postgresql.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",

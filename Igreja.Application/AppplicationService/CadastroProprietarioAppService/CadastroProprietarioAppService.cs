@@ -1,40 +1,53 @@
 ﻿using AutoMapper;
+using Igreja.Core.Communication;
+using Igreja.Core.Comunication;
+using Igreja.Core.Data;
 using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
-using Igreja.Infraestructure;
+using Igreja.Service.Abstract;
+using Igreja.Service.Abstract.ViewModel;
 using System.Threading.Tasks;
 
 namespace Igreja.Application.AppplicationService.CadastroProprietarioAppService
 {
     public class CadastroProprietarioAppService : ICadastroProprietarioAppService
     {
-        private readonly IUnitOfWork<LoginProprietario> _loginIunitOfWork;
 
         private readonly IUnitOfWork<Proprietario> _proprietarioIunitOfWork;
 
-        private readonly IMapper _mapper;
-        public CadastroProprietarioAppService(IUnitOfWork<LoginProprietario> loginIunitOfWork, IUnitOfWork<Proprietario> proprietarioIunitOfWork)
-        {
-            _loginIunitOfWork = loginIunitOfWork;
-            _proprietarioIunitOfWork = proprietarioIunitOfWork;
-        }
-       
+        private readonly ICadastroProprietarioServiceFacade _cadastroProprietarioServiceFacade;
 
-        public CadastroProprietarioAppService(IMapper mapper)
+        private readonly IMapper _mapper;
+        public CadastroProprietarioAppService(IMapper mapper,
+            IUnitOfWork<Proprietario> proprietarioIunitOfWork,
+            ICadastroProprietarioServiceFacade cadastroProprietarioServiceFacade)
         {
             _mapper = mapper;
+            _proprietarioIunitOfWork = proprietarioIunitOfWork;
+            _cadastroProprietarioServiceFacade = cadastroProprietarioServiceFacade;
         }
-
 
         public async Task<bool> CadastroUsuario(CadastroProprietarioViewModel cadastroProprietarioViewModel)
         {
-            var loginProprietario = _mapper.Map<LoginProprietario>(cadastroProprietarioViewModel);
-            await _loginIunitOfWork.Repository.Add(loginProprietario);
+            if (cadastroProprietarioViewModel.EhValido())
+            {
+                var viewModel = _mapper.Map<CadastroProprietarioIgrejaViewModel>(cadastroProprietarioViewModel);
+                await _cadastroProprietarioServiceFacade.CadastratUsuarioProprietario(viewModel);
 
-            var proprietario = _mapper.Map<Proprietario>(cadastroProprietarioViewModel);
-            await _proprietarioIunitOfWork.Repository.Add(proprietario);
+                return await _proprietarioIunitOfWork.Commit();
+            }
 
-            return true;
+            foreach (var erro in cadastroProprietarioViewModel.Erros())
+            {
+                 DomainNotificationHandler.AddNotification(new DomainNotification(erro.PropertyName, erro.ErrorMessage));
+            }  
+
+            return false;
+        }
+
+        public void Dispose()
+        {
+            _proprietarioIunitOfWork?.Dispose();
         }
     }
 }

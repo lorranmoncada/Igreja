@@ -1,8 +1,10 @@
 using Igreja.Application;
+using Igreja.Core.Data;
 using Igreja.Domain;
 using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
 using Igreja.Infraestructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,9 +18,9 @@ namespace Igreja.Teste.Unidade
         [Fact]
         public void RetornoIgrejaCategorias()
         {
-            var listaCategoriasViewModel = new List<CategoriaViewModel>() { new CategoriaViewModel(1, "Evangelico") };
+            var listaCategoriasViewModel = new List<CategoriaViewModel>() { new CategoriaViewModel(Guid.NewGuid(), "Evangelico") };
 
-            var listaCategoria = new List<CategoriaIgreja>() { new CategoriaIgreja(TipoCategoriaEnum.Evangelica) { Id = 1 } };
+            var listaCategoria = new List<CategoriaIgreja>() { new CategoriaIgreja(TipoCategoriaEnum.Evangelica) { Id = Guid.NewGuid() } };
 
 
             Moq.Mock<IAplicationCategoriaIgrejaApp> mockAplication = new Moq.Mock<IAplicationCategoriaIgrejaApp>();

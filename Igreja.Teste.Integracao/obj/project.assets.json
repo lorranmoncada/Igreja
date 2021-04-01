@@ -35,6 +35,15 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "FluentValidation/9.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -2380,6 +2389,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "FluentValidation": "9.5.3",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "compile": {
@@ -2393,7 +2403,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AutoMapper": "10.1.1",
+          "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
+          "Igreja.Repositorie.Abastract": "1.0.0",
           "Igreja.Service.Abstract": "1.0.0"
         },
         "compile": {
@@ -2411,7 +2424,8 @@
           "Igreja.Repositorie.Abastract": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.1",
-          "Npgsql": "5.0.1.1"
+          "Npgsql": "5.0.1.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.1"
         },
         "compile": {
           "bin/placeholder/Igreja.Infraestructure.dll": {}
@@ -2502,6 +2516,24 @@
         "coverlet-icon.png",
         "coverlet.collector.1.3.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "FluentValidation/9.5.3": {
+      "sha512": "BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "type": "package",
+      "path": "fluentvalidation/9.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.9.5.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/5.0.1": {

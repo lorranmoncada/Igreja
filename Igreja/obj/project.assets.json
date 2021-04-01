@@ -29,6 +29,15 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FluentValidation/9.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -459,6 +468,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "FluentValidation": "9.5.3",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "compile": {
@@ -472,7 +482,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AutoMapper": "10.1.1",
+          "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
+          "Igreja.Repositorie.Abastract": "1.0.0",
           "Igreja.Service.Abstract": "1.0.0"
         },
         "compile": {
@@ -490,7 +503,8 @@
           "Igreja.Repositorie.Abastract": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.1",
-          "Npgsql": "5.0.1.1"
+          "Npgsql": "5.0.1.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.1"
         },
         "compile": {
           "bin/placeholder/Igreja.Infraestructure.dll": {}
@@ -549,6 +563,24 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "FluentValidation/9.5.3": {
+      "sha512": "BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "type": "package",
+      "path": "fluentvalidation/9.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.9.5.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
     "Humanizer.Core/2.8.26": {

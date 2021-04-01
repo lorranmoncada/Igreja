@@ -1,11 +1,10 @@
 ﻿using Igreja.Core;
-using Igreja.Infraestructure;
+using Igreja.Core.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Igreja.Infraestructure
@@ -13,9 +12,11 @@ namespace Igreja.Infraestructure
     public class RepositoryGeneric<T> : IRepositoryGeneric<T> where T : BaseEntity
     {
         DbSet<T> Entity { get; set; }
+        private readonly IgrejaContext _igrejaContext;
         public RepositoryGeneric(IgrejaContext igrejaContext)
         {
             Entity = igrejaContext.Set<T>();
+            _igrejaContext = igrejaContext;
         }
 
         public async Task Add(T entity)
@@ -43,12 +44,12 @@ namespace Igreja.Infraestructure
             throw new NotImplementedException();
         }
 
-        public virtual void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+        //public virtual void Dispose()
+        //{
+        //    _igrejaContext?.Dispose();
+        //}
 
-        public async Task<T> GetById(int id)
+        public async Task<T> GetById(Guid id)
         {
             return await Entity.SingleAsync(x => x.Id == id);
         }

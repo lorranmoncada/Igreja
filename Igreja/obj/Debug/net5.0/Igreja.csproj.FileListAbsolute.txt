@@ -54,3 +54,4 @@ C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Repositorie.Abastract.dll
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Service.Abstract.dll
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Repositorie.Abastract.pdb
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Service.Abstract.pdb
+C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\FluentValidation.dll

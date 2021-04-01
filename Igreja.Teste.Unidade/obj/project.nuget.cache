@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "W2ZT238GWNjMoboY+H8Mapo/gWvQ2sLVpu4BefEYah4uJ2mrQy4TMCSH+PJ8v//VTf0YU7B++EreaLnA71BWCw==",
+  "dgSpecHash": "XIWoZa7sCSK40PzeIQzy86FJCgXv7AoAvydM18jC9xVYfbUZHI5t4CBDr7jaGyUvj7seR9V3GI74duAEolb5lg==",
   "success": true,
   "projectFilePath": "C:\\Estudo\\Igreja\\Igreja.Teste.Unidade\\Igreja.Teste.Unidade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
@@ -32,6 +33,7 @@
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.1\\npgsql.entityframeworkcore.postgresql.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

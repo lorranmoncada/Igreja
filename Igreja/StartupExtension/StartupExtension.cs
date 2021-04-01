@@ -1,9 +1,9 @@
 ﻿using Igreja.Application;
 using Igreja.Application.AppplicationService.CadastroProprietarioAppService;
-using Igreja.Core;
+using Igreja.Core.Comunication;
+using Igreja.Core.Data;
 using Igreja.Domain.Services;
 using Igreja.Infraestructure;
-using Igreja.Infraestructure.Interface;
 using Igreja.Infraestructure.Repository;
 using Igreja.Repositorie.Abastract;
 using Igreja.Service.Abstract;
@@ -15,6 +15,9 @@ namespace Igreja.StartupExtension
     {
         public static void StartupResolveDependencyInject(this IServiceCollection service)
         {
+            // context
+            service.AddScoped<IgrejaContext>();
+
             service.AddScoped(typeof(IRepositoryGeneric<>), typeof(RepositoryGeneric<>));
             service.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 
@@ -28,7 +31,11 @@ namespace Igreja.StartupExtension
 
             //Cadastro Login Proprietario
             service.AddScoped<ILoginProprietarioRepository, LoginProprietarioRepository>();
+            service.AddScoped<ICadastroProprietarioServiceFacade, CadastroProprietarioServiceFacade>();
 
+
+            //DomainNotification
+            service.AddSingleton<DomainNotificationHandler>();
         }
     }
 }

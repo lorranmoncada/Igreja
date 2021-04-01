@@ -9,3 +9,4 @@ C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.csproj.CoreCompileInpu
 C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.dll
 C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\ref\Igreja.Core.dll
 C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.pdb
+C:\Estudo\Igreja\Igreja.Core\obj\Debug\net5.0\Igreja.Core.csprojAssemblyReference.cache

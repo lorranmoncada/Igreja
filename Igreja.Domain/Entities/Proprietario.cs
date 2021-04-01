@@ -15,7 +15,7 @@ namespace Igreja.Domain.Entity
         public virtual IList<IgrejaEntity> Igrejas { get; private set; }
 
         //EF
-        public int IdUserProprietario { get; private set; }
+        public Guid IdUserProprietario { get; private set; }
         public virtual LoginProprietario LoginProprietario { get; private set; }
 
 
@@ -26,6 +26,6 @@ namespace Igreja.Domain.Entity
             DataCadastro = DateTime.Now;
         }
 
-        public void AtribuirIdLoginproprietario(int idLoginProprietario) => IdUserProprietario = idLoginProprietario;
+        public void AtribuirIdLoginProprietario(Guid idLoginProprietario) => IdUserProprietario = idLoginProprietario;
     }
 }

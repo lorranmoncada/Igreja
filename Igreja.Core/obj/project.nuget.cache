@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o+PzgIpT+Pw5pUGseG4laYe2pPLdaSM8Dd+wXTCCW67vFoBz0+o0klrxm15qpdtjTCoCKvJxaXEaPc4vKEBisA==",
+  "dgSpecHash": "HsvWxtUwH5aKbh931DJh3OZRwiAIqWSrZ6wpoKCbuoHRo4CbIyIyP59eDKuZvCF7hUREGYevQvHkQhZXEjmQpw==",
   "success": true,
   "projectFilePath": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.1\\microsoft.entityframeworkcore.analyzers.5.0.1.nupkg.sha512",

@@ -1,8 +1,5 @@
 ﻿using Igreja.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Igreja.Core.Data;
 using System.Threading.Tasks;
 
 namespace Igreja.Infraestructure
