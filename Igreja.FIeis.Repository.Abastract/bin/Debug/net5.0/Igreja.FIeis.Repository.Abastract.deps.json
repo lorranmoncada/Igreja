@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Igreja.FIeis.Repository.Abastract/1.0.0": {
+        "runtime": {
+          "Igreja.FIeis.Repository.Abastract.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Igreja.FIeis.Repository.Abastract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

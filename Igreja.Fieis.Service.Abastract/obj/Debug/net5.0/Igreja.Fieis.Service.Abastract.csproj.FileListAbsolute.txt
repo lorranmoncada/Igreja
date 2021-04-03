@@ -1,0 +1,11 @@
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\bin\Debug\net5.0\Igreja.Fieis.Service.Abastract.deps.json
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\bin\Debug\net5.0\Igreja.Fieis.Service.Abastract.dll
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\bin\Debug\net5.0\ref\Igreja.Fieis.Service.Abastract.dll
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\bin\Debug\net5.0\Igreja.Fieis.Service.Abastract.pdb
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\Igreja.Fieis.Service.Abastract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\Igreja.Fieis.Service.Abastract.AssemblyInfoInputs.cache
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\Igreja.Fieis.Service.Abastract.AssemblyInfo.cs
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\Igreja.Fieis.Service.Abastract.csproj.CoreCompileInputs.cache
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\Igreja.Fieis.Service.Abastract.dll
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\ref\Igreja.Fieis.Service.Abastract.dll
+C:\Estudo\Igreja\Igreja.Fieis.Service.Abastract\obj\Debug\net5.0\Igreja.Fieis.Service.Abastract.pdb

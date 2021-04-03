@@ -20,7 +20,7 @@ namespace Igreja
         {
             services.AddControllers();
             services.AddScoped(typeof(IRepositoryGeneric<>), typeof(RepositoryGeneric<>));
-            services.AddScoped<IAplicationCategoriaIgrejaApp, AplicationCategoriaIgrejaApp>();
+            services.AddScoped<IAplicationCategoriaIgrejaAppService, AplicationCategoriaIgrejaAppService>();
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);

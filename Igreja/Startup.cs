@@ -37,6 +37,8 @@ namespace Igreja
             services.AddAutoMapper(typeof(ViewModelToLoginProprietario));
             services.AddAutoMapper(typeof(ViewModelIgrejaToDomain));
             services.AddAutoMapper(typeof(ViewModelToEnderecoDomain));
+            services.AddAutoMapper(typeof(CadastroFielViewmodelMap));
+
             // Injeção de dependencias
             services.StartupResolveDependencyInject();
 

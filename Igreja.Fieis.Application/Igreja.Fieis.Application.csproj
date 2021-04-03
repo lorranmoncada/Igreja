@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Igreja.Core\Igreja.Core.csproj" />
+    <ProjectReference Include="..\Igreja.Domain\Igreja.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,211 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Estudo\\Igreja\\Igreja.Fieis.Domain\\Igreja.Fieis.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj",
+        "projectName": "Igreja.Core",
+        "projectPath": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Igreja\\Igreja.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Estudo\\Igreja\\Igreja.Fieis.Domain\\Igreja.Fieis.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Estudo\\Igreja\\Igreja.Fieis.Domain\\Igreja.Fieis.Domain.csproj",
+        "projectName": "Igreja.Fieis.Domain",
+        "projectPath": "C:\\Estudo\\Igreja\\Igreja.Fieis.Domain\\Igreja.Fieis.Domain.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Igreja\\Igreja.Fieis.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj"
+              },
+              "C:\\Estudo\\Igreja\\Igreja.Fieis.Service.Abastract\\Igreja.Fieis.Service.Abastract.csproj": {
+                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Fieis.Service.Abastract\\Igreja.Fieis.Service.Abastract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Estudo\\Igreja\\Igreja.Fieis.Service.Abastract\\Igreja.Fieis.Service.Abastract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Estudo\\Igreja\\Igreja.Fieis.Service.Abastract\\Igreja.Fieis.Service.Abastract.csproj",
+        "projectName": "Igreja.Fieis.Service.Abastract",
+        "projectPath": "C:\\Estudo\\Igreja\\Igreja.Fieis.Service.Abastract\\Igreja.Fieis.Service.Abastract.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Igreja\\Igreja.Fieis.Service.Abastract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

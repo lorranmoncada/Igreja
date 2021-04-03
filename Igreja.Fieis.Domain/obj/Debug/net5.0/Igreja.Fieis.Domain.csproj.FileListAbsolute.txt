@@ -1,0 +1,17 @@
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Fieis.Domain.deps.json
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Fieis.Domain.dll
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\ref\Igreja.Fieis.Domain.dll
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Fieis.Domain.pdb
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Core.dll
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Core.pdb
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.csprojAssemblyReference.cache
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.AssemblyInfoInputs.cache
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.AssemblyInfo.cs
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.csproj.CoreCompileInputs.cache
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.csproj.CopyComplete
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.dll
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\ref\Igreja.Fieis.Domain.dll
+C:\Estudo\Igreja\Igreja.Fieis.Domain\obj\Debug\net5.0\Igreja.Fieis.Domain.pdb
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Fieis.Service.Abastract.dll
+C:\Estudo\Igreja\Igreja.Fieis.Domain\bin\Debug\net5.0\Igreja.Fieis.Service.Abastract.pdb

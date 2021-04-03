@@ -27,14 +27,14 @@ namespace Igreja.Application.AppplicationService.CadastroProprietarioAppService
             _cadastroProprietarioServiceFacade = cadastroProprietarioServiceFacade;
         }
 
-        public async Task<bool> CadastroUsuario(CadastroProprietarioViewModel cadastroProprietarioViewModel)
+        public async Task CadastroUsuario(CadastroProprietarioViewModel cadastroProprietarioViewModel)
         {
             if (cadastroProprietarioViewModel.EhValido())
             {
                 var viewModel = _mapper.Map<CadastroProprietarioIgrejaViewModel>(cadastroProprietarioViewModel);
                 await _cadastroProprietarioServiceFacade.CadastratUsuarioProprietario(viewModel);
 
-                return await _proprietarioIunitOfWork.Commit();
+                await _proprietarioIunitOfWork.Commit();
             }
 
             foreach (var erro in cadastroProprietarioViewModel.Erros())
@@ -42,7 +42,6 @@ namespace Igreja.Application.AppplicationService.CadastroProprietarioAppService
                  DomainNotificationHandler.AddNotification(new DomainNotification(erro.PropertyName, erro.ErrorMessage));
             }  
 
-            return false;
         }
 
         public void Dispose()

@@ -15,13 +15,12 @@ namespace Igreja.Infraestructure
           : base(options) { _configuration = configuration; }
 
         public DbSet<Proprietario> Proprietario { get; set; }
-
         public DbSet<LoginProprietario> LoginProprietario { get; set; }
-
         public DbSet<IgrejaEntity> Igreja { get; set; }
-
         public DbSet<Endereco> Endereco { get; set; }
         public DbSet<CategoriaIgreja> CategoriaIgreja { get; set; }
+        public DbSet<LoginFiel> LoginFiel { get; set; }
+        public DbSet<Fiel> Fiel { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,4 +1,5 @@
 ﻿using FluentValidation.Results;
+using System.Collections.Generic;
 
 namespace Igreja.Core.DomainObjects
 {
@@ -7,5 +8,7 @@ namespace Igreja.Core.DomainObjects
         protected ValidationResult ValidationResult { get; set; }
 
         public abstract bool EhValido();
+
+        public abstract IList<ValidationFailure> Erros();
     }
 }

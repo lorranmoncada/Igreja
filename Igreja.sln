@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{7D1CCC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igreja.Domain", "Igreja.Domain\Igreja.Domain.csproj", "{57428587-B6A1-4EA0-8313-F9604F9AA319}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cadastro", "Cadastro", "{60B59E7A-D217-4376-B06A-259A3F386D95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Igreja", "Igreja", "{60B59E7A-D217-4376-B06A-259A3F386D95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1B4124EC-C6B5-420D-9C96-CE31C118BEED}"
 EndProject
@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igreja.Teste.Unidade", "Igr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igreja.Teste.Integracao", "Igreja.Teste.Integracao\Igreja.Teste.Integracao.csproj", "{854F1C69-5347-4DA3-870F-65DD4DA32695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Igreja.Service.Abstract", "Igreja.Service.Abstract\Igreja.Service.Abstract.csproj", "{8825D73B-30CA-4324-9C10-29553F1E2C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igreja.Service.Abstract", "Igreja.Service.Abstract\Igreja.Service.Abstract.csproj", "{8825D73B-30CA-4324-9C10-29553F1E2C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Igreja.Repositorie.Abastract", "Igreja.Repositorie.Abastract\Igreja.Repositorie.Abastract.csproj", "{79764A8B-6446-476D-AFB8-21E3A6BF0FA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igreja.Repositorie.Abastract", "Igreja.Repositorie.Abastract\Igreja.Repositorie.Abastract.csproj", "{79764A8B-6446-476D-AFB8-21E3A6BF0FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

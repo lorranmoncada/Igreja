@@ -9,3 +9,4 @@ C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositori
 C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.dll
 C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\ref\Igreja.Repositorie.Abastract.dll
 C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.pdb
+C:\Estudo\Igreja\Igreja.Repositorie.Abastract\obj\Debug\net5.0\Igreja.Repositorie.Abastract.csprojAssemblyReference.cache

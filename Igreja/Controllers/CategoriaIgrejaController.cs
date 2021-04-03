@@ -10,9 +10,9 @@ namespace Igreja.Controllers
     [Route("api")]
     public class CategoriaIgrejaController : Controller
     {
-        private readonly IAplicationCategoriaIgrejaApp _aplicationCategoriaIgrejaAp;
+        private readonly IAplicationCategoriaIgrejaAppService _aplicationCategoriaIgrejaAp;
 
-        public CategoriaIgrejaController(IAplicationCategoriaIgrejaApp aplicationCategoriaIgrejaAp)
+        public CategoriaIgrejaController(IAplicationCategoriaIgrejaAppService aplicationCategoriaIgrejaAp)
         {
             _aplicationCategoriaIgrejaAp = aplicationCategoriaIgrejaAp;
         }

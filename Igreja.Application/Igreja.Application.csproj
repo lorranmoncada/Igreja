@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Igreja.Domain\Igreja.Domain.csproj" />
     <ProjectReference Include="..\Igreja.Infraestructure\Igreja.Infraestructure.csproj" />
+    <ProjectReference Include="..\Igreja.Service.Abstract\Igreja.Service.Abstract.csproj" />
   </ItemGroup>
 
 </Project>

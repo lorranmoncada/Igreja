@@ -6,6 +6,6 @@ namespace Igreja.Application.AppplicationService.CadastroProprietarioAppService
 {
     public interface ICadastroProprietarioAppService: IDisposable
     {
-        Task<bool> CadastroUsuario(CadastroProprietarioViewModel cadastroProprietarioViewModel);
+        Task CadastroUsuario(CadastroProprietarioViewModel cadastroProprietarioViewModel);
     }
 }

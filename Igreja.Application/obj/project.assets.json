@@ -969,7 +969,8 @@
     "net5.0": [
       "AutoMapper >= 10.1.1",
       "Igreja.Domain >= 1.0.0",
-      "Igreja.Infraestructure >= 1.0.0"
+      "Igreja.Infraestructure >= 1.0.0",
+      "Igreja.Service.Abstract >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1012,6 +1013,9 @@
             },
             "C:\\Estudo\\Igreja\\Igreja.Infraestructure\\Igreja.Infraestructure.csproj": {
               "projectPath": "C:\\Estudo\\Igreja\\Igreja.Infraestructure\\Igreja.Infraestructure.csproj"
+            },
+            "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj": {
+              "projectPath": "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj"
             }
           }
         }

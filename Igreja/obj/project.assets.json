@@ -455,7 +455,8 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "Igreja.Domain": "1.0.0",
-          "Igreja.Infraestructure": "1.0.0"
+          "Igreja.Infraestructure": "1.0.0",
+          "Igreja.Service.Abstract": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Igreja.Application.dll": {}

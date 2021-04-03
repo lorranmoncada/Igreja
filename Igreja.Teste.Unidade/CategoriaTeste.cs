@@ -23,13 +23,13 @@ namespace Igreja.Teste.Unidade
             var listaCategoria = new List<CategoriaIgreja>() { new CategoriaIgreja(TipoCategoriaEnum.Evangelica) { Id = Guid.NewGuid() } };
 
 
-            Moq.Mock<IAplicationCategoriaIgrejaApp> mockAplication = new Moq.Mock<IAplicationCategoriaIgrejaApp>();
+            Moq.Mock<IAplicationCategoriaIgrejaAppService> mockAplication = new Moq.Mock<IAplicationCategoriaIgrejaAppService>();
             mockAplication.Setup(x => x.ObterCategorias()).Returns(Task.FromResult<IList<CategoriaViewModel>>(listaCategoriasViewModel));
 
             Moq.Mock<IUnitOfWork<CategoriaIgreja>> mockPattern = new Moq.Mock<IUnitOfWork<CategoriaIgreja>>();
             mockPattern.Setup(x => x.Repository.All()).Returns(Task.FromResult<IList<CategoriaIgreja>>(listaCategoria));
 
-            var pattern = new AplicationCategoriaIgrejaApp(mockPattern.Object);
+            var pattern = new AplicationCategoriaIgrejaAppService(mockPattern.Object);
 
             var result = pattern.ObterCategorias();
 

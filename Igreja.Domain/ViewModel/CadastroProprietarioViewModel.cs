@@ -30,7 +30,7 @@ namespace Igreja.Domain.ViewModel
             return ValidationResult.IsValid;
         }
 
-        public  IList<ValidationFailure> Erros()
+        public override IList<ValidationFailure> Erros()
         {
             return ValidationResult.Errors;
         }

@@ -2,13 +2,8 @@
 using Igreja.Core.Data;
 using Igreja.Core.DomainObjects;
 using Igreja.Domain.Entity;
-using Igreja.Domain.ViewModel;
 using Igreja.Service.Abstract;
 using Igreja.Service.Abstract.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Igreja.Domain.Services
