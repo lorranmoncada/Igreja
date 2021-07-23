@@ -1,10 +1,7 @@
-﻿using Igreja.Core;
+﻿using Igreja.Domain.Entities;
 using Igreja.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Igreja.Infraestructure
 {
@@ -21,6 +18,8 @@ namespace Igreja.Infraestructure
         public DbSet<CategoriaIgreja> CategoriaIgreja { get; set; }
         public DbSet<LoginFiel> LoginFiel { get; set; }
         public DbSet<Fiel> Fiel { get; set; }
+        public DbSet<ProprietarioPost> ProprietarioPost { get; set; }
+        public DbSet<Comentario> PostResponse { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

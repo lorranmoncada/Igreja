@@ -1,9 +1,7 @@
 ﻿using Igreja.Core;
+using Igreja.Domain.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Igreja.Domain.Entity
 {
@@ -13,7 +11,10 @@ namespace Igreja.Domain.Entity
         public string Senha { get; private set; }
         public DateTime DataCadastro { get; private set; }
 
+        //EF
         public Proprietario Proprietario { get; private set; }
+        public virtual IList<ProprietarioPost> Posts { get; set; }
+        public virtual IList<Comentario> Comentarios { get; set; }
 
         //EF
         protected LoginProprietario()

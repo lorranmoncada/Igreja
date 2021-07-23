@@ -1,11 +1,12 @@
 ﻿using Igreja.Core.Data;
+using Igreja.Core.DomainObjects;
 using Igreja.Core.Extension;
 using Igreja.Domain;
 using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
-using Igreja.Infraestructure;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Igreja.Application
@@ -22,8 +23,11 @@ namespace Igreja.Application
         {
             IList<CategoriaViewModel> CategoriaViewModel = new List<CategoriaViewModel>();
             var IgrejaCategorias = await _categoriaUnitOfWork.Repository.All();
+
+            if (!IgrejaCategorias.Any())  throw new DomainException("Não foram encontradas categorias cadastradas");
             
-            IgrejaCategorias.ForEach(i => {
+            
+            IgrejaCategorias.ForEachEnumerator(i => {
                 foreach (var item in (TipoCategoriaEnum[])Enum.GetValues(typeof(TipoCategoriaEnum)))
                 {
                     if (i.TipoCategoria == item)

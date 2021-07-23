@@ -1,0 +1,7 @@
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.csprojAssemblyReference.cache
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.AssemblyInfoInputs.cache
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.AssemblyInfo.cs
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.csproj.CoreCompileInputs.cache
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.MvcApplicationPartsAssemblyInfo.cs
+C:\Estudo\Igreja\integracao\obj\Debug\net5.0\integracao.MvcApplicationPartsAssemblyInfo.cache

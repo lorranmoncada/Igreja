@@ -13,6 +13,8 @@ namespace Igreja.Domain.Entity
         public Guid CategoriaIgrejaId { get; private set; }
         public virtual CategoriaIgreja CategoriaIgreja { get; private set; }
         public Guid EnderecoId { get; private set; }
+
+        public Fiel Fiel { get; private set; }
         public virtual Endereco Endereco { get; private set; }
 
         public IgrejaEntity(string nome, string cnpj)
@@ -24,6 +26,7 @@ namespace Igreja.Domain.Entity
 
         public void AtribuirProprietario(Guid idProprietario) => ProprietarioId = idProprietario;
         public void AtribuirEndereco(Guid idEndereco) => EnderecoId = idEndereco;
+
         public void AtribuirCategoria(Guid tpCategoria) => CategoriaIgrejaId = tpCategoria;
     }
 }

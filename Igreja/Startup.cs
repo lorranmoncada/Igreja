@@ -1,6 +1,7 @@
-using Igreja.Application.AutoMapper;
 using Igreja.Infraestructure;
 using Igreja.StartupExtension;
+using Igreja.Mapper;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -26,20 +27,15 @@ namespace Igreja
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options =>
                  options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddControllers();
 
             //Contexto
             services.AddDbContext<IgrejaContext>(p => p.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddControllers();
-
             //AutoMapper
-            services.AddAutoMapper(typeof(ViewModelToProprietario));
-            services.AddAutoMapper(typeof(ViewModelToLoginProprietario));
-            services.AddAutoMapper(typeof(ViewModelIgrejaToDomain));
-            services.AddAutoMapper(typeof(ViewModelToEnderecoDomain));
-            services.AddAutoMapper(typeof(CadastroFielViewmodelMap));
-
-            // Injeção de dependencias
+            services.StartupAutoMapperExtension();
+            //Metiator
+            services.AddMediatR(typeof(Startup));
+            // Injeção de dependencia
             services.StartupResolveDependencyInject();
 
             services.AddSwaggerGen(c =>

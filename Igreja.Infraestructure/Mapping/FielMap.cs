@@ -20,6 +20,10 @@ namespace Igreja.Infraestructure.Mapping
             builder.Property(c => c.Cep).HasColumnName("cep").HasMaxLength(9).IsRequired();
             builder.Property(c => c.Endereco).HasColumnName("endereco").HasMaxLength(250).IsRequired();
 
+            builder.HasMany(c => c.ComentariosPost).WithOne(x => x.Fiel).HasForeignKey(fk => fk.IdUserFielResponse);
+
+            builder.HasOne(x => x.Igreja).WithOne(x => x.Fiel).HasForeignKey<Fiel>(fk => fk.IdIgreja);
+
             builder.ToTable("tb_fiel");
         }
     } 

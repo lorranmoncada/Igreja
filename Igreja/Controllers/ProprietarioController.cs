@@ -1,7 +1,9 @@
-﻿using Igreja.Application.AppplicationService.CadastroProprietarioAppService;
-using Igreja.Core.Comunication;
+﻿using Igreja.Application.AppplicationService.ProprietarioAppService;
+using Igreja.Core.NotificationMessage;
+using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Igreja.Controllers
@@ -10,12 +12,12 @@ namespace Igreja.Controllers
     [Route("api")]
     public class ProprietarioController : Controller
     {
-        private readonly ICadastroProprietarioAppService _cadastroProprietarioAppService;
+        private readonly IProprietarioAppService _proprietarioAppService;
         private readonly DomainNotificationHandler _domainNotificationHandler;
-        public ProprietarioController(ICadastroProprietarioAppService cadastroProprietarioAppService,
+        public ProprietarioController(IProprietarioAppService proprietarioAppService,
             DomainNotificationHandler domainNotificationHandler)
         {
-            _cadastroProprietarioAppService = cadastroProprietarioAppService;
+            _proprietarioAppService = proprietarioAppService;
             _domainNotificationHandler = domainNotificationHandler;
         }
 
@@ -23,7 +25,7 @@ namespace Igreja.Controllers
         [Route("cadastro/proprietario")]
         public async Task<IActionResult> CadastroProprietario([FromBody] CadastroProprietarioViewModel cadastroProprietarioViewModel)
         {
-            await _cadastroProprietarioAppService.CadastroUsuario(cadastroProprietarioViewModel);
+            await _proprietarioAppService.CadastroUsuario(cadastroProprietarioViewModel);
 
             
             if (_domainNotificationHandler.TemNotificacao())
@@ -33,7 +35,14 @@ namespace Igreja.Controllers
                return BadRequest(erros);
             }
 
-            return CreatedAtAction(nameof(CadastroProprietario), new { Login = cadastroProprietarioViewModel.Login });
+            return NoContent();
+        }
+
+        [HttpGet]
+        [Route("proprietarios")]
+        public async Task<IEnumerable<LoginProprietario>> AllProprietarios()
+        {
+            return await _proprietarioAppService.Proprietarios();
         }
     }
 }

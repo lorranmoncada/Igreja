@@ -29,7 +29,7 @@ namespace Igreja.Infraestructure
             await Entity.AddRangeAsync(items);
         }
 
-        public async Task<IList<T>> All()
+        public async Task<IEnumerable<T>> All()
         {
            return await Entity.AsNoTracking().ToListAsync();
         }
@@ -53,7 +53,7 @@ namespace Igreja.Infraestructure
         {
             return await Entity.SingleAsync(x => x.Id == id);
         }
-
+    
         public void Update(T entity)
         {
             Entity.Update(entity);

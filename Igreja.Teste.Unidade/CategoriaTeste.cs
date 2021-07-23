@@ -1,5 +1,6 @@
 using Igreja.Application;
 using Igreja.Core.Data;
+using Igreja.Core.DomainObjects;
 using Igreja.Domain;
 using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
@@ -12,9 +13,9 @@ using Xunit;
 
 namespace Igreja.Teste.Unidade
 {
-    public class CategoriaTeste 
+    public class CategoriaTeste
     {
-      
+
         [Fact]
         public void RetornoIgrejaCategorias()
         {
@@ -34,6 +35,42 @@ namespace Igreja.Teste.Unidade
             var result = pattern.ObterCategorias();
 
             Assert.Equal(result.Result.Any(), listaCategoriasViewModel.Any());
+        }
+
+        [Fact]
+        public void ExecptionRetornoIgrejaCategorias()
+        {
+          
+            var listaCategoria = new List<CategoriaIgreja>() { };
+
+            Moq.Mock<IAplicationCategoriaIgrejaAppService> mockAplication = new Moq.Mock<IAplicationCategoriaIgrejaAppService>();    
+
+            Moq.Mock<IUnitOfWork<CategoriaIgreja>> mockPattern = new Moq.Mock<IUnitOfWork<CategoriaIgreja>>();
+            mockPattern.Setup(x => x.Repository.All()).Returns(Task.FromResult<IList<CategoriaIgreja>>(listaCategoria));
+
+            var pattern = new AplicationCategoriaIgrejaAppService(mockPattern.Object);
+
+            var result = pattern.ObterCategorias();
+
+            Assert.ThrowsAny<DomainException>(() => throw new DomainException("Não foram encontradas categorias cadastradas"));
+        }
+
+        [Fact]
+        public void VerificandoMensagemDeExessao()
+        {
+
+            var listaCategoria = new List<CategoriaIgreja>() { };
+
+            Moq.Mock<IAplicationCategoriaIgrejaAppService> mockAplication = new Moq.Mock<IAplicationCategoriaIgrejaAppService>();
+
+            Moq.Mock<IUnitOfWork<CategoriaIgreja>> mockPattern = new Moq.Mock<IUnitOfWork<CategoriaIgreja>>();
+            mockPattern.Setup(x => x.Repository.All()).Returns(Task.FromResult<IList<CategoriaIgreja>>(listaCategoria));
+
+            var pattern = new AplicationCategoriaIgrejaAppService(mockPattern.Object);
+
+            var result = pattern.ObterCategorias().Exception.InnerException.Message;
+
+            Assert.Equal("Não foram encontradas categorias cadastradas",result);
         }
     }
 }

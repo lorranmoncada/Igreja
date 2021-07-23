@@ -1,4 +1,5 @@
 ﻿using Igreja.Core;
+using Igreja.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +17,13 @@ namespace Igreja.Domain.Entity
         public string Cep { get; private set; }
         public string Endereco { get; private set; }
         public Guid IdIgreja { get; private set; }
-        //EF
         public Guid IdLoginFiel { get; private set; }
-        public virtual LoginFiel LoginFiel { get;private set;}
+
+        //EF
+        public virtual IList<Comentario> ComentariosPost { get; private set; }
+
+        public virtual LoginFiel LoginFiel { get; private set; }
+        public virtual IgrejaEntity Igreja { get; private set; }
         public DateTime DataCadastro { get; private set; }
 
 

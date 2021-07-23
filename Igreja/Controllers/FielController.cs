@@ -1,7 +1,10 @@
 ﻿using Igreja.Application.AppplicationService.CadastroFielAppService;
-using Igreja.Core.Comunication;
+using Igreja.Application.ViewModel;
+using Igreja.Core.NotificationMessage;
+using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Igreja.Controllers
@@ -10,20 +13,20 @@ namespace Igreja.Controllers
     [Route("api")]
     public class FielController : Controller
     {
-        private readonly ICadastrofielAppService _cadastrofielAppService;
+        private readonly IFielAppService _fielAppService;
         private readonly DomainNotificationHandler _domainNotificationHandler;
-        public FielController(ICadastrofielAppService cadastrofielAppService,
+        public FielController(IFielAppService fielAppService,
             DomainNotificationHandler domainNotificationHandler)
         {
-            _cadastrofielAppService = cadastrofielAppService;
+            _fielAppService = fielAppService;
             _domainNotificationHandler = domainNotificationHandler;
         }
 
         [HttpPost]
         [Route("cadastro/fiel")]
-        public async Task<IActionResult> CadastroFiel([FromBody] CadastroFielViewModel cadastroFielViewModel)
+        public async Task<IActionResult> Cadastro([FromBody] CadastroFielViewModel cadastroFielViewModel)
         {
-            await _cadastrofielAppService.CadastroFiel(cadastroFielViewModel);
+            await _fielAppService.CadastroFiel(cadastroFielViewModel);
 
             if (_domainNotificationHandler.TemNotificacao())
             {
@@ -32,7 +35,15 @@ namespace Igreja.Controllers
                 return BadRequest(erros);
             }
 
-            return CreatedAtAction(nameof(CadastroFiel), new { Login = cadastroFielViewModel.Login });
+            return CreatedAtAction(nameof(Cadastro), new { Login = cadastroFielViewModel.Login });
         }
+
+        [HttpGet]
+        [Route("fieis")]
+        public async Task<IEnumerable<CristaoViewModel>> Fieis()
+        {
+            return await _fielAppService.AllFieis();
+        }
+
     }
 }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "eNA3mjZNYiF1OQUJ0IJROig57EB0RFudu7Gpka+1gt2Si5wArEli8fIByZ5692ntJSP373EP9ifuWjdt30IP3Q==",
+  "dgSpecHash": "TQaS+Rjfap0O0Pl3cT1RsPoRqK4jzs+qCmguAqqP32h3FBfIKcSATNrDIkcEtWP59u11PNSaR7ll557g4NKwBA==",
   "success": true,
   "projectFilePath": "C:\\Estudo\\Igreja\\Igreja.Infraestructure\\Igreja.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Colaborador Datum\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",

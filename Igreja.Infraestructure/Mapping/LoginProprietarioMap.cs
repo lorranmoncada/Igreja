@@ -21,7 +21,10 @@ namespace Igreja.Infraestructure.Mapping
             
             // Relacionamento 1 : 1 | Proprietario : LoginProprietario 
             builder.HasOne(l => l.Proprietario).WithOne(l => l.LoginProprietario).HasForeignKey<Proprietario>(fk => fk.IdUserProprietario);
-
+            //Relacionamento 1 : N | Proprietario : Comentarios
+            builder.HasMany(p => p.Comentarios).WithOne(i => i.Proprietario).HasForeignKey(fk => fk.IdUserPostResponse);
+            //Relacionamento 1 : N | Proprietario : Posts
+            builder.HasMany(p => p.Posts).WithOne(i => i.LoginProprietario).HasForeignKey(fk => fk.IdUserProprietario);
 
             builder.ToTable("login_proprietario");
 

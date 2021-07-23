@@ -22,7 +22,7 @@ namespace Igreja.Core.Data
 
         void Delete(IEnumerable<T> entities);
 
-        Task<IList<T>> All();
+        Task<IEnumerable<T>> All();
 
         Task<T> GetById(Guid id);
 

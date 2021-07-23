@@ -49,7 +49,7 @@ namespace Igreja.Domain.Services
 
             var categoriaExistente = await _categoriaRepository.Repository.GetById(cadastroProprietarioIgrejaViewModel.IdTipoCategoria);
 
-            if (categoriaExistente == null) new DomainException("Categoria de igreja inesistente");
+            if (categoriaExistente == null) throw new DomainException("Categoria de igreja inexistente");
 
             var igreja = _mapper.Map<IgrejaEntity>(cadastroProprietarioIgrejaViewModel);
 
