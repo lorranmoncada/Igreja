@@ -29,4 +29,11 @@ public class ComentarioController : Controller
     { 
         return Ok(await _comentarioAppService.Comentarios(idPost));
     }
+
+    [HttpGet]
+    [Route("respostas/{idComentario:guid}")]
+    public async Task<IActionResult> Respostas(Guid idComentario)
+    {
+        return Ok(await _comentarioAppService.Respostas(idComentario));
+    }
 }

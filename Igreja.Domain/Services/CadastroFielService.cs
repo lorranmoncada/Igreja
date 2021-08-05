@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Igreja.Core.Data;
 using Igreja.Domain.Entity;
-using Igreja.Service.Abstract;
-using Igreja.Service.Abstract.ViewModel;
+using Igreja.Domain.Interface;
+using Igreja.Domain.ViewModel;
 using System.Threading.Tasks;
 
 namespace Igreja.Fieis.Domain.Services

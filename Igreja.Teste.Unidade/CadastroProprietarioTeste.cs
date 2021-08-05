@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Igreja.Application.AppplicationService.CadastroProprietarioAppService;
 using Igreja.Core.Data;
 using Igreja.Domain.Entity;
 using Igreja.Domain.Services;

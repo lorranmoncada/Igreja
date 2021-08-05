@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -12,12 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Igreja.Core\Igreja.Core.csproj" />
-    <ProjectReference Include="..\Igreja.Repositorie.Abastract\Igreja.Repositorie.Abastract.csproj" />
-    <ProjectReference Include="..\Igreja.Service.Abstract\Igreja.Service.Abstract.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

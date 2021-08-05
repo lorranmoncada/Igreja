@@ -293,8 +293,6 @@
           "AutoMapper": "10.1.1",
           "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
-          "Igreja.Service.Abstract": "1.0.0",
           "MediatR": "9.0.0"
         },
         "compile": {
@@ -302,29 +300,6 @@
         },
         "runtime": {
           "bin/placeholder/Igreja.Domain.dll": {}
-        }
-      },
-      "Igreja.Repositorie.Abastract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Igreja.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Igreja.Repositorie.Abastract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Igreja.Repositorie.Abastract.dll": {}
-        }
-      },
-      "Igreja.Service.Abstract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Igreja.Service.Abstract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Igreja.Service.Abstract.dll": {}
         }
       }
     }
@@ -962,22 +937,11 @@
       "type": "project",
       "path": "../Igreja.Domain/Igreja.Domain.csproj",
       "msbuildProject": "../Igreja.Domain/Igreja.Domain.csproj"
-    },
-    "Igreja.Repositorie.Abastract/1.0.0": {
-      "type": "project",
-      "path": "../Igreja.Repositorie.Abastract/Igreja.Repositorie.Abastract.csproj",
-      "msbuildProject": "../Igreja.Repositorie.Abastract/Igreja.Repositorie.Abastract.csproj"
-    },
-    "Igreja.Service.Abstract/1.0.0": {
-      "type": "project",
-      "path": "../Igreja.Service.Abstract/Igreja.Service.Abstract.csproj",
-      "msbuildProject": "../Igreja.Service.Abstract/Igreja.Service.Abstract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Igreja.Domain >= 1.0.0",
-      "Igreja.Repositorie.Abastract >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.1",
       "Npgsql >= 5.0.1.1",
@@ -1028,9 +992,6 @@
           "projectReferences": {
             "C:\\Estudo\\Igreja\\Igreja.Domain\\Igreja.Domain.csproj": {
               "projectPath": "C:\\Estudo\\Igreja\\Igreja.Domain\\Igreja.Domain.csproj"
-            },
-            "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj": {
-              "projectPath": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj"
             }
           }
         }

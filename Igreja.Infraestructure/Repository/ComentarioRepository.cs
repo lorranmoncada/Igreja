@@ -1,7 +1,7 @@
 ﻿using Igreja.Domain.Dtos;
 using Igreja.Domain.Entities;
 using Igreja.Domain.ViewModel;
-using Igreja.Repositorie.Abastract;
+using Igreja.Infraestructure.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Igreja.Infraestructure.Repository
 {
-    public class ComentarioRepository : RepositoryGeneric<Comentario>, IComentarioRepository<DtoComentario>
+    public class ComentarioRepository : RepositoryGeneric<Comentario>, IComentarioRepository
     {
 
         private readonly IgrejaContext _igrejaContext;
@@ -23,29 +23,49 @@ namespace Igreja.Infraestructure.Repository
 
         public async Task<IList<DtoComentario>> Comentarios(Guid idPost)
         {
-            var list = await (from comentario in _igrejaContext.PostResponse
-                        join fiel in _igrejaContext.Fiel on comentario.IdUserFielResponse equals fiel.Id into f
+            var list =  (from comentario in _igrejaContext.Comentario
+                        join fiel in _igrejaContext.Fiel on comentario.IdUser equals fiel.Id into f
                         from fiel in f.DefaultIfEmpty()
-                        join proprietario in _igrejaContext.Proprietario on comentario.IdUserPostResponse equals proprietario.Id into p
-                        from proprietario in p.DefaultIfEmpty()
-                        where comentario.IdPost == idPost
+                        where (comentario.IdPost == idPost && comentario.IdComentarioParent == null)
+
                         select new DtoComentario()
                         {
                             IdPost = comentario.IdPost,
-                            IdUserFielResponse = fiel.Id,
-                            IdUserPostResponse = proprietario.Id,
+                            IdUser = fiel.Id,
                             Comentario = comentario.ComentarioUsuario,
                             DataCadastro = comentario.DataCadastro,
-                            NomeFiel = fiel.NomeFiel
-                        }).ToListAsync();
+                            NomeFiel = fiel.NomeFiel,
+                            IdComentario = comentario.Id,
+                            IdComentarioParent = comentario.IdComentarioParent,
+                        }).AsEnumerable().Select(x => new DtoComentario()
+                        {
+                            IdPost = x.IdPost,
+                            IdUser = x.IdUser,
+                            Comentario = x.Comentario,
+                            DataCadastro = x.DataCadastro,
+                            NomeFiel = x.NomeFiel,
+                            IdComentario = x.IdComentario,
+                            IdComentarioParent = x.IdComentarioParent,
+                            QtdComentario = QuantidadeRespostas((Guid)x.IdComentario)
+                        }).ToList();
 
 
             return list;
         }
 
+        public int QuantidadeRespostas(Guid idComentario)
+        {
+            return _igrejaContext.Comentario.AsNoTracking().Where(x => x.IdComentarioParent == idComentario).Count();
+        }
+
         public int QuantidadeComentarios(Guid idPost)
         {
-            return _igrejaContext.PostResponse.Where(x => x.IdPost == idPost).Count();
+            return _igrejaContext.Comentario.Where(x => x.IdPost == idPost && x.IdComentarioParent == null).Count();
         }
+
+        //public async Task<IQueryable<Comentario>> Respostas(Guid idComentario)
+        //{
+        //    return await _igrejaContext.Comentario.w;
+        //}
     }
 }

@@ -11,8 +11,6 @@
           "AutoMapper": "10.1.1",
           "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
-          "Igreja.Service.Abstract": "1.0.0",
           "MediatR": "9.0.0"
         },
         "runtime": {
@@ -175,19 +173,6 @@
         "runtime": {
           "Igreja.Core.dll": {}
         }
-      },
-      "Igreja.Repositorie.Abastract/1.0.0": {
-        "dependencies": {
-          "Igreja.Core": "1.0.0"
-        },
-        "runtime": {
-          "Igreja.Repositorie.Abastract.dll": {}
-        }
-      },
-      "Igreja.Service.Abstract/1.0.0": {
-        "runtime": {
-          "Igreja.Service.Abstract.dll": {}
-        }
       }
     }
   },
@@ -331,16 +316,6 @@
       "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
     },
     "Igreja.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Igreja.Repositorie.Abastract/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Igreja.Service.Abstract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

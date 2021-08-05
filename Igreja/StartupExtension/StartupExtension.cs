@@ -3,21 +3,18 @@ using Igreja.Application.AppplicationService.CadastroFielAppService;
 using Igreja.Application.AppplicationService.Comentario;
 using Igreja.Application.AppplicationService.PostProprietario;
 using Igreja.Application.AppplicationService.ProprietarioAppService;
-using Igreja.Application.AutoMapper;
 using Igreja.Core.Communication.MediaTR;
 using Igreja.Core.Data;
 using Igreja.Core.NotificationMessage;
-using Igreja.Core.Util;
 using Igreja.Domain.Dtos;
-using Igreja.Domain.Entities;
 using Igreja.Domain.Entity;
 using Igreja.Domain.Events.FielEvents.CadastroEvent;
+using Igreja.Domain.Interface;
 using Igreja.Domain.Services;
 using Igreja.Fieis.Domain.Services;
 using Igreja.Infraestructure;
+using Igreja.Infraestructure.Interface;
 using Igreja.Infraestructure.Repository;
-using Igreja.Repositorie.Abastract;
-using Igreja.Service.Abstract;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -55,7 +52,7 @@ namespace Igreja.StartupExtension
             service.AddScoped<IPostProprietarioRepository<ProprietarioPost>, PostProprietarioRepository>();
 
             //Comentario
-            service.AddScoped<IComentarioRepository<DtoComentario>, ComentarioRepository>();
+            service.AddScoped<IComentarioRepository, ComentarioRepository>();
 
             //DomainNotification
             service.AddSingleton<DomainNotificationHandler>();

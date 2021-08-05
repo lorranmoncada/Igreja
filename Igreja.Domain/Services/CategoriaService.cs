@@ -1,5 +1,6 @@
-﻿using Igreja.Service.Abstract;
+﻿
 
+using Igreja.Domain.Interface;
 
 namespace Igreja.Domain.Services
 {

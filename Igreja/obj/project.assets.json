@@ -477,8 +477,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "Igreja.Domain": "1.0.0",
-          "Igreja.Infraestructure": "1.0.0",
-          "Igreja.Service.Abstract": "1.0.0"
+          "Igreja.Infraestructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Igreja.Application.dll": {}
@@ -509,8 +508,6 @@
           "AutoMapper": "10.1.1",
           "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
-          "Igreja.Service.Abstract": "1.0.0",
           "MediatR": "9.0.0"
         },
         "compile": {
@@ -525,7 +522,6 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Igreja.Domain": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.1",
           "Npgsql": "5.0.1.1",
@@ -536,29 +532,6 @@
         },
         "runtime": {
           "bin/placeholder/Igreja.Infraestructure.dll": {}
-        }
-      },
-      "Igreja.Repositorie.Abastract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Igreja.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Igreja.Repositorie.Abastract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Igreja.Repositorie.Abastract.dll": {}
-        }
-      },
-      "Igreja.Service.Abstract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Igreja.Service.Abstract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Igreja.Service.Abstract.dll": {}
         }
       }
     }
@@ -1547,16 +1520,6 @@
       "type": "project",
       "path": "../Igreja.Infraestructure/Igreja.Infraestructure.csproj",
       "msbuildProject": "../Igreja.Infraestructure/Igreja.Infraestructure.csproj"
-    },
-    "Igreja.Repositorie.Abastract/1.0.0": {
-      "type": "project",
-      "path": "../Igreja.Repositorie.Abastract/Igreja.Repositorie.Abastract.csproj",
-      "msbuildProject": "../Igreja.Repositorie.Abastract/Igreja.Repositorie.Abastract.csproj"
-    },
-    "Igreja.Service.Abstract/1.0.0": {
-      "type": "project",
-      "path": "../Igreja.Service.Abstract/Igreja.Service.Abstract.csproj",
-      "msbuildProject": "../Igreja.Service.Abstract/Igreja.Service.Abstract.csproj"
     }
   },
   "projectFileDependencyGroups": {

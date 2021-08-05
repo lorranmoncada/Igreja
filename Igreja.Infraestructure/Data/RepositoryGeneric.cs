@@ -1,10 +1,12 @@
 ﻿using Igreja.Core;
 using Igreja.Core.Data;
+using Igreja.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Igreja.Infraestructure
@@ -58,7 +60,7 @@ namespace Igreja.Infraestructure
         {
             Entity.Update(entity);
         }
-
+    
         public void Update(IEnumerable<T> items)
         {
             throw new NotImplementedException();

@@ -1,5 +1,5 @@
 ﻿using Igreja.Domain.Entity;
-using Igreja.Repositorie.Abastract;
+using Igreja.Infraestructure.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -39,14 +39,10 @@ C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Application.dll
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Core.dll
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Domain.dll
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Infraestructure.dll
-C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Repositorie.Abastract.dll
-C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Service.Abstract.dll
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Application.pdb
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Infraestructure.pdb
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Core.pdb
 C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Domain.pdb
-C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Repositorie.Abastract.pdb
-C:\Estudo\Igreja\Igreja\bin\Debug\net5.0\Igreja.Service.Abstract.pdb
 C:\Estudo\Igreja\Igreja\obj\Debug\net5.0\staticwebassets\Igreja.StaticWebAssets.Manifest.cache
 C:\Estudo\Igreja\Igreja\obj\Debug\net5.0\staticwebassets\Igreja.StaticWebAssets.xml
 C:\Estudo\Igreja\Igreja\obj\Debug\net5.0\scopedcss\bundle\Igreja.styles.css

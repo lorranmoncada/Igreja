@@ -3,9 +3,8 @@ using Igreja.Core.Communication;
 using Igreja.Core.Data;
 using Igreja.Core.NotificationMessage;
 using Igreja.Domain.Entity;
+using Igreja.Domain.Interface;
 using Igreja.Domain.ViewModel;
-using Igreja.Service.Abstract;
-using Igreja.Service.Abstract.ViewModel;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

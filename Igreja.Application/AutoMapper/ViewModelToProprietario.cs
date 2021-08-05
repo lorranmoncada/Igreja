@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Igreja.Domain.Entity;
 using Igreja.Domain.ViewModel;
-using Igreja.Service.Abstract.ViewModel;
 
 namespace Igreja.Application.AutoMapper
 {

@@ -1,6 +1,5 @@
 ﻿using Igreja.Domain.Entity;
-using Igreja.Repositorie.Abastract;
-
+using Igreja.Infraestructure.Interface;
 
 namespace Igreja.Infraestructure
 {

@@ -8,13 +8,13 @@ namespace Igreja.Domain.Dtos
 {
     public class DtoComentario
     {
-        public Guid? IdUserFielResponse { get; set; }
-        public Guid? IdUserPostResponse { get; set; }
+        public Guid? IdUser { get; set; }
         public Guid IdPost { get; set; }
+        public Guid? IdComentario { get; set; }
         public string Comentario { get; set; }
         public int QtdComentario { get; set; }
         public DateTime DataCadastro { get; set; }
         public string NomeFiel { get; set; }
-        
+        public Guid? IdComentarioParent { get; set; }
     }
 }

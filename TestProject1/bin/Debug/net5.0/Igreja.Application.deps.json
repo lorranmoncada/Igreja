@@ -10,8 +10,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "Igreja.Domain": "1.0.0",
-          "Igreja.Infraestructure": "1.0.0",
-          "Igreja.Service.Abstract": "1.0.0"
+          "Igreja.Infraestructure": "1.0.0"
         },
         "runtime": {
           "Igreja.Application.dll": {}
@@ -228,8 +227,6 @@
           "AutoMapper": "10.1.1",
           "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
-          "Igreja.Service.Abstract": "1.0.0",
           "MediatR": "9.0.0"
         },
         "runtime": {
@@ -239,7 +236,6 @@
       "Igreja.Infraestructure/1.0.0": {
         "dependencies": {
           "Igreja.Domain": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.1",
           "Npgsql": "5.0.1.1",
@@ -247,19 +243,6 @@
         },
         "runtime": {
           "Igreja.Infraestructure.dll": {}
-        }
-      },
-      "Igreja.Repositorie.Abastract/1.0.0": {
-        "dependencies": {
-          "Igreja.Core": "1.0.0"
-        },
-        "runtime": {
-          "Igreja.Repositorie.Abastract.dll": {}
-        }
-      },
-      "Igreja.Service.Abstract/1.0.0": {
-        "runtime": {
-          "Igreja.Service.Abstract.dll": {}
         }
       }
     }
@@ -449,16 +432,6 @@
       "sha512": ""
     },
     "Igreja.Infraestructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Igreja.Repositorie.Abastract/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Igreja.Service.Abstract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

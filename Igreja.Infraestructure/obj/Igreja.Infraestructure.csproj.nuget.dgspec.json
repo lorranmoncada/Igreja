@@ -120,12 +120,6 @@
             "projectReferences": {
               "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj": {
                 "projectPath": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj"
-              },
-              "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj": {
-                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj"
-              },
-              "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj": {
-                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj"
               }
             }
           }
@@ -209,9 +203,6 @@
             "projectReferences": {
               "C:\\Estudo\\Igreja\\Igreja.Domain\\Igreja.Domain.csproj": {
                 "projectPath": "C:\\Estudo\\Igreja\\Igreja.Domain\\Igreja.Domain.csproj"
-              },
-              "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj": {
-                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj"
               }
             }
           }
@@ -243,140 +234,6 @@
               "version": "[5.0.1, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj",
-        "projectName": "Igreja.Repositorie.Abastract",
-        "projectPath": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\Igreja.Repositorie.Abastract.csproj",
-        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
-        "outputPath": "C:\\Estudo\\Igreja\\Igreja.Repositorie.Abastract\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/AAIvr3ITq2NMhpF1uP9VvOjNB1kLVC2vLvNQAYhbOvrGwkVcjj/api": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj": {
-                "projectPath": "C:\\Estudo\\Igreja\\Igreja.Core\\Igreja.Core.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj",
-        "projectName": "Igreja.Service.Abstract",
-        "projectPath": "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\Igreja.Service.Abstract.csproj",
-        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
-        "outputPath": "C:\\Estudo\\Igreja\\Igreja.Service.Abstract\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/AAIvr3ITq2NMhpF1uP9VvOjNB1kLVC2vLvNQAYhbOvrGwkVcjj/api": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",

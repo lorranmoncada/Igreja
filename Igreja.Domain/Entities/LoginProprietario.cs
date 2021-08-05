@@ -14,7 +14,6 @@ namespace Igreja.Domain.Entity
         //EF
         public Proprietario Proprietario { get; private set; }
         public virtual IList<ProprietarioPost> Posts { get; set; }
-        public virtual IList<Comentario> Comentarios { get; set; }
 
         //EF
         protected LoginProprietario()

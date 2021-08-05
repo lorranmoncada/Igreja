@@ -1,11 +1,6 @@
 ﻿using AutoMapper;
 using Igreja.Domain.Entity;
-using Igreja.Service.Abstract.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Igreja.Domain.ViewModel;
 
 namespace Igreja.Application.AutoMapper
 {

@@ -4,7 +4,7 @@ using Igreja.Core.Data;
 using Igreja.Core.Util;
 using Igreja.Domain.Dtos;
 using Igreja.Domain.Entity;
-using Igreja.Repositorie.Abastract;
+using Igreja.Infraestructure.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,14 +20,14 @@ namespace Igreja.Application.AppplicationService.PostProprietario
         private readonly IUnitOfWork<ProprietarioPost> _unitOfWorkProprietarioPost;
         private readonly IUnitOfWork<IgrejaEntity> _unitOfWorkIgrejaEntity;
         private readonly IPostProprietarioRepository<ProprietarioPost> _postProprietarioRepository;
-        private readonly IComentarioRepository<DtoComentario> _comentarioRepository;
+        private readonly IComentarioRepository _comentarioRepository;
         private readonly IUnitOfWork<Proprietario> _unitOfWorkproprietarioRepository;
 
         public PostProprietarioAppService(IMapper mapper,
             IUnitOfWork<ProprietarioPost> unitOfWorkProprietarioPost,
             IPostProprietarioRepository<ProprietarioPost> postProprietarioRepository,
             IUnitOfWork<IgrejaEntity> unitOfWorkIgrejaEntity,
-            IComentarioRepository<DtoComentario> comentarioRepository,
+            IComentarioRepository comentarioRepository,
            IUnitOfWork<Proprietario> unitOfWorkproprietarioRepository)
         {
             _mapper = mapper;

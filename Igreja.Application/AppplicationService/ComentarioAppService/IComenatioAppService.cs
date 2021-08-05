@@ -1,4 +1,5 @@
 ﻿using Igreja.Application.ViewModel;
+using Igreja.Core.Util;
 using Igreja.Domain.Dtos;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,7 @@ namespace Igreja.Application.AppplicationService.Comentario
         Task CriarComentario(ComentarioViewModel comentario);
 
         Task<IList<DtoComentario>>Comentarios(Guid idPost);
+
+        Task<PaginatedList<ComentarioViewModel>> Respostas(Guid idComentario);
     }
 }

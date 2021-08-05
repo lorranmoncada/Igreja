@@ -19,7 +19,7 @@ namespace Igreja.Infraestructure
         public DbSet<LoginFiel> LoginFiel { get; set; }
         public DbSet<Fiel> Fiel { get; set; }
         public DbSet<ProprietarioPost> ProprietarioPost { get; set; }
-        public DbSet<Comentario> PostResponse { get; set; }
+        public DbSet<Comentario> Comentario { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

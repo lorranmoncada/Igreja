@@ -2470,7 +2470,6 @@
           "AutoMapper": "10.1.1",
           "FluentValidation": "9.5.3",
           "Igreja.Core": "1.0.0",
-          "Igreja.Repositorie.Abastract": "1.0.0",
           "Igreja.Service.Abstract": "1.0.0",
           "MediatR": "9.0.0"
         },
